@@ -2,6 +2,7 @@
 
 ## introduction
 ![](../.gitbook/assets/status.png)
+
 All docker containers running on orbs network are montiored by [orbs status page](https://status.orbs.network/).
 
 Each orbs-vm gets its on visual representation according to the ```status.json``` the vm exports.

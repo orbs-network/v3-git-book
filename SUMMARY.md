@@ -6,6 +6,7 @@
 
 * [introduction](orbs-vm/introduction.md)
 * [best practice](orbs-vm/best-practice.md)
+* [status](orbs-vm/status.md)
 
 ## orbs-lambda
 

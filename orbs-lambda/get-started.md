@@ -7,7 +7,9 @@ Before getting started you should:
 - Set up your environment with [Node.js](https://nodejs.org) (version?)
 
 ## Environment
-Tasks are executed in a node (version) runtime.
+Tasks are executed in a node (version) runtime environment.
 
-For ease-of-use, a set of common dependencies are pre-installed in the environment:
+You may import any of the following packages, which are pre-installed in the environment:
 TODO
+
+If you wish to use a package not included in this list, please contact us.

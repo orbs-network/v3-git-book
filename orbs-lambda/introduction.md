@@ -1,6 +1,6 @@
 # Introduction
 
-###Orbs Lambda - Decentralized Serverless Cloud Function
+### Orbs Lambda - Decentralized Serverless Cloud Function
 
 Orbs Lambda is an event driven, serverless and decentralized computing solution, similar in concept to AWS Lambda - only decentralized.
 
@@ -8,5 +8,4 @@ Write your cloud function in the industry standard language JavaScript, without 
 
 Orbs Lambda is not meant to replace your smart contracts. It is a complementary solution that allows developers to enrich their business logic without sacrificing decentralization.
 
-For a more flexible solution resembling AWS EC2 see Orbs VM.
-
+For a more flexible solution resembling AWS EC2 see [Orbs VM](../orbs-vm/introduction.md).

@@ -1,4 +1,4 @@
-# Register events
+# Lambda Triggers
 
 Orbs Lambda supports 3 types of triggers: OnSchedule, onBlocks, onEvent.
 
@@ -44,7 +44,7 @@ Currently, `W` (nearest weekday) and `L` (last day of month/week) are not suppor
 Most other features supported by popular cron implementations should work just fine,
 including `#` (nth weekday of the month).
 
-[cron-parser] is used to parse crontab instructions.
+[cron-parser](https://github.com/harrisiirak/cron-parser) is used to parse crontab instructions.
 
 
 ### "Every" notation
@@ -76,7 +76,7 @@ onBlocks(
 
 ## onEvent
 
-////////////////
+TODO
 
 ## Subscribing to triggers
 In order to subscribe to one or more of the triggers above, one must implement and export a "register" function.

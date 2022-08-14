@@ -19,7 +19,7 @@ interface ExecutionArgs {
 }
  ```
 
-upon runtime, the backend process invokes your task function with the parameters above.
+Upon runtime, the backend process invokes your task function with the parameters above.
 
 As you can see, some of them are only relevant when bound to certain types of triggers. 
 

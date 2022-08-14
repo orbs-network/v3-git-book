@@ -10,8 +10,12 @@
 
 ## orbs-lambda
 
-* [introduction](orbs-lambda/introduction.md)
-* [get started](orbs-lambda/get-started.md)
+* [Introduction](orbs-lambda/introduction.md)
+* [Getting started](orbs-lambda/get-started.md)
+* [Supported networks](orbs-lambda/supported-networks.md)
+* [Writing your lambda function](orbs-lambda/writing-your-lambda-function.md)
 * [Register events](orbs-lambda/register-events.md)
-* [execution best practice](orbs-lambda/execution-best-practice.md)
+* [Project structure](orbs-lambda/project-structure.md)
+* [Test and run locally](orbs-lambda/test-and-run-locally.md)
+* [Paying for your transactions](orbs-lambda/paying-for-your-transactions.md)
 * [submit your lambda](orbs-lambda/submit-your-lambda.md)

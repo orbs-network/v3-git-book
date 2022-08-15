@@ -5,7 +5,7 @@ Orbs Lambda supports 3 types of triggers: OnSchedule, onBlocks, onEvent.
 See [interfaces.ts](https://github.com/orbs-network/orbs-lambda/blob/master/interfaces.ts) for the full description of types and definitions.   
 
 ## OnSchedule
-Triggers you task based on a predefined schedule, either a cron expression or an "every x" notation.
+Allows you to trigger your task based on a predefined schedule, either a cron expression or an "every x" notation.
 Interface:
 ```js
 onSchedule(
@@ -18,6 +18,7 @@ onSchedule(
 
 ### Cron Expression
 Standard cron expression in UTC timezone.
+
 Format:
 ```
  *    *    *    *    *

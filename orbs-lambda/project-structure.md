@@ -4,12 +4,12 @@ Submitted projects should respect to following structure:
 
 * A new dir with the project name, containing:
 * index.js file
-* Additional optional files to be imported into index.js, such as config JSON, ABIs etc.
+* Optional: additional files to be imported into index.js, such as config JSON, ABIs etc.
 
-### index.js
+## index.js
 This is the JS file containing the function(s) you wish to run on Orbs Lambda, as well as the triggers definitions.
 
-General structure
+### General structure
 
 ```js
 // imports of local files and [supported dependencies]

@@ -21,7 +21,7 @@ interface ExecutionArgs {
 
 Upon runtime, the backend process invokes your task function with the parameters above.
 
-As you can see, some of them are only relevant when bound to certain types of triggers. 
+(As you can see, some parameters are only relevant when bound to certain types of triggers.) 
 
 Example:
 
@@ -36,7 +36,7 @@ function myBlocksTask(web3, config, fromBlock, toBlock) {
     // do hard work
 }
 
-// This task is planned to run on block ranges
+// This task is planned to run as reaction to events being emitted
 function myEventsTask(web3, config, events) {
     // do hard work
 }

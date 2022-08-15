@@ -1,29 +1,8 @@
 # Writing your lambda function
 
-Your Lambda is written as a regular JS function, which receives the following arguments:
+Your Lambda is written as a regular JS function.
 
-```ts
-interface ExecutionArgs {
-    // key:value configuration
-    config: {[key: string]: any};
-    // List of guardians addresses
-    // guardians: string[]
-    // web3 api for interacting with the blockchain
-    web3: any;
-    // the first block in the range to be scanned for potential triggers - only relevant for onBlocks
-    fromBlock? : number;
-    // the last block in the range to be scanned for potential triggers - only relevant for onBlocks
-    toBlock? : number;
-    // array of events matching the criteria - only relevant for onEvent
-    events? : Event[];
-}
- ```
-
-Upon runtime, the backend process invokes your task function with the parameters above.
-
-(As you can see, some parameters are only relevant when bound to certain types of triggers.) 
-
-Example:
+Upon runtime, the backend process invokes your task function with a set of parameters according to its trigger type:
 
 ```js
 // This task is planned to run on a time-based trigger
@@ -31,13 +10,19 @@ function myScheduledTask(web3, config) {
     // do hard work
 }
 
+// This task is planned to run as reaction to events being emitted
+function myEventsTask(web3, config, event) {
+    // do hard work
+}
+
 // This task is planned to run on block ranges
 function myBlocksTask(web3, config, fromBlock, toBlock) {
     // do hard work
 }
-
-// This task is planned to run as reaction to events being emitted
-function myEventsTask(web3, config, events) {
-    // do hard work
-}
 ```
+
+- `web3`: web3 api for interacting with the blockchain
+- `config`: key:value object containing the configuration, which you supply when [defining the trigger](./lambda-triggers/README.md).
+- `event` (_only relevant for onEvent_) : the [Event](https://github.com/orbs-network/orbs-lambda/blob/master/interfaces.ts#L29) object which was emitted.
+- `fromBlock` (_only relevant for onBlocks_) : the first block in the range to be scanned for potential triggers
+- `toBlock` (_only relevant for onBlocks_) : the last block in the range to be scanned for potential triggers

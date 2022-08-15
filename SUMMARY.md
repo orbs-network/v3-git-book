@@ -6,6 +6,8 @@
 
 * [introduction](orbs-vm/introduction.md)
 * [best practice](orbs-vm/best-practice.md)
+* [dockerfile](docker-file.md)
+* [healthcheck](orbs-vm/health-check.md)
 * [status](orbs-vm/status.md)
 
 ## orbs-lambda

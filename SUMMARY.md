@@ -17,7 +17,7 @@
 * [Supported Networks](orbs-lambda/supported-networks.md)
 * [Lambda Triggers](orbs-lambda/lambda-triggers.md)
 * [Writing Your Lambda Function](orbs-lambda/writing-your-lambda-function.md)
-* [Project Structure](orbs-lambda/project-structure.md)
+* [Putting It All Together](orbs-lambda/putting-it-all-together.md)
 * [Test And Run Locally](orbs-lambda/test-and-run-locally.md)
 * [Paying For Your Transactions](orbs-lambda/paying-for-your-transactions.md)
 * [Submit Your Lambda](orbs-lambda/submit-your-lambda.md)

@@ -25,6 +25,7 @@ ORBS-V3 - layer3, brings two main features to its decentralized network: ORBS-VM
 ![](./.gitbook/assets/aws-orbs.jpg)
 
 ## **ORBS VM** - Decentralized Docker-Based Virtual Machine
+<img width="32px" src="./.gitbook/assets/logo-vm.png"/>
 
 - Dedicated decentralized virtual machine, similar in concept to AWS EC2 - but decentralized.
 
@@ -38,6 +39,8 @@ ORBS-V3 - layer3, brings two main features to its decentralized network: ORBS-VM
 
 
 ## **ORBS-Lambda** - Decentralized Serverless Cloud Function
+<img width="32px" src="./.gitbook/assets/logo-lambda.png"/>
+
 - ORBS-Lambda is in fact an instance of ORBS-VM running on ORBS-V3 network.
 It is an event driven, serverless and decentralized computing solution, similar in concept to AWS Lambda - but decentralized.
 

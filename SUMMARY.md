@@ -9,6 +9,7 @@
 * [dockerfile](orbs-vm/docker-file.md)
 * [healthcheck](orbs-vm/health-check.md)
 * [status](orbs-vm/status.md)
+* [deploy](orbs-vm/deploy.md)
 
 ## orbs-lambda
 

@@ -1,6 +1,22 @@
 # ORBS-VM Deploy 
 Deployment of a new ORBS_VM is done using a git **pull request** in [orbs mainnet deployment repo](https://github.com/orbs-network/mainnet-deployment/blob/main/mainnet.json)
 
+## Build docker image
+Now that your app has healthceck installed, uses the correct workdir, and writes status, you can use docker build, push to any docker registry
+
+> Before docker push! its very important to tag your ORBS-VM docker image in the following format ```**v**Major.Minor.Patch```
+
+### example 
+In the ```.Dockerfile``` folder run the following commands:
+
+```bash
+docker build -t example-docker-registry.io/vm-example .
+
+docker tag example-docker-registry.io/vm-example example-docker-registry.io/vm-example:v1.0.0
+
+docker push example-docker-registry.io/vm-example:v1.0.0
+```
+
 ## mainnet.json
 let us consider mainnet.json
 ```json

@@ -6,6 +6,8 @@ Before getting started you should:
 - [Check if we support the network you're running on](./supported-networks.md)
 - Set up your environment with [Node.js](https://nodejs.org) (version?)
 
+Full working examples can be found at the [Orbs Lambda repository](https://github.com/orbs-network/orbs-lambda/tree/master/examples)
+
 ## Environment
 Tasks are executed in a node (version) runtime environment.
 

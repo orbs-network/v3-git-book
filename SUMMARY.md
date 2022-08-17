@@ -5,7 +5,7 @@
 ## orbs-vm
 
 * [introduction](orbs-vm/introduction.md)
-* [best practice](orbs-vm/best-practice.md)
+* [get started](orbs-vm/get-started.md)
 * [dockerfile](orbs-vm/docker-file.md)
 * [healthcheck](orbs-vm/health-check.md)
 * [status](orbs-vm/status.md)

@@ -1,4 +1,4 @@
-# ORBS-VM introduction
+# ORBS-VM Introduction
 
 ## Why use ORBS-VM?
 - Some logic is too hard to implement on smart contracts in any blockchain.

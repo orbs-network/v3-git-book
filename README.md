@@ -2,7 +2,7 @@
 layout: landing
 ---
 
-# ORBS v3
+# ORBS-V3
 ## What is ORBS?
 ORBS is an open, decentralized and public blockchain infrastructure executed by a secure network of permissionless validators using Proof-of-Stake (PoS) consensus.
 

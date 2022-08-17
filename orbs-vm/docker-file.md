@@ -1,4 +1,4 @@
-## Dockerfile best practice
+## Dockerfile
 consider a nodejs example of orbs-vm docker file:
 ```dockerfile
 FROM node:16-alpine

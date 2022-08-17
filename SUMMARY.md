@@ -7,7 +7,7 @@
 * [introduction](orbs-vm/introduction.md)
 * [get started](orbs-vm/get-started.md)
 * [dockerfile](orbs-vm/docker-file.md)
-* [healthcheck](orbs-vm/health-check.md)
+* [health check](orbs-vm/health-check.md)
 * [status](orbs-vm/status.md)
 * [deploy](orbs-vm/deploy.md)
 

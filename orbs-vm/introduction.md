@@ -10,7 +10,7 @@
 
 > Please note that ORBS-VM should be chosen only if ORBS-Lambda does not fulfill your dapp's requirement, As ORBS_Lambda is much easier to set up and maintain. 
 
-## keypoints using ORBS-VM
+## Key benefits using ORBS-VM
 - It can benefit from running on a decentralized permissionless network.
 - your container is always UP so long the network is alive
 - it can enjoy ORBS consensus decisions and data, for instance, which orbs-node with ORBS-VM performs the next action, or split the computed data amongst several nodes to distribute computation.

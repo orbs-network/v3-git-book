@@ -1,5 +1,5 @@
 # Introduction
-<img width="32px" src="./.gitbook/assets/logo-lambda.png"/>
+<img width="32px" src="../.gitbook/assets/logo-lambda.png"/>
 
 ### Orbs Lambda - Decentralized Serverless Cloud Function
 

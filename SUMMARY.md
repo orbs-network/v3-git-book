@@ -23,7 +23,6 @@
   * [onEvent](orbs-lambda/lambda-triggers/onevent.md)
   * [Subscribing To Triggers](orbs-lambda/lambda-triggers/subscribing-to-triggers.md)
 * [Writing Your Lambda Function](orbs-lambda/writing-your-lambda-function.md)
-* [Examples](orbs-lambda/examples.md)
 * [Test And Run Locally](orbs-lambda/test-and-run-locally.md)
 * [Paying For Your Transactions](orbs-lambda/paying-for-your-transactions.md)
 * [Submit Your Lambda](orbs-lambda/submit-your-lambda.md)

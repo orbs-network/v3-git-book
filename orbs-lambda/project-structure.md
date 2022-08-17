@@ -18,7 +18,8 @@ const abi = require('./abi.js') // [{"inputs":[...]...}...]
 
 // The task functions you wish to run on Lambda, as well as other helper functions you may implement.
 async function myScheduledTask(web3, config) {
-    web3.eth.sendTransaction({to: config.toAddress, value: web3.utils.toWei("1", "ether")} )
+    const contract = new web3.eth.Contract(abi, config.contractAddress)
+    contract.methods.myMethod(config.methodParams).send()
 }
 
 async function myEventTask(web3, storage, config, event) {

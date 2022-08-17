@@ -1,4 +1,5 @@
 # ORBS-VM Introduction
+<img width="32px" src="../.gitbook/assets/logo-vm.png"/>
 
 ## Why use ORBS-VM?
 - Some logic is too hard to implement on smart contracts in any blockchain.

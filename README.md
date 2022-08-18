@@ -22,7 +22,7 @@ layout: landing
 
 ORBS-V3 - layer3, brings two main features to its decentralized network: ORBS-VM & ORBS-Lambda. In the following docs you will be guided how to set up your own ORBS-VM or ORBS-Lambda schema.
 
-![](./.gitbook/assets/aws-orbs.jpg)
+<img width=800 src="./.gitbook/assets/aws-orbs.jpg"/>
 
 ## **ORBS VM** - Decentralized Docker-Based Virtual Machine
 <img width="32px" src="./.gitbook/assets/logo-vm.png"/>

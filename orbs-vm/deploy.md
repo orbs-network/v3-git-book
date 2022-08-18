@@ -4,7 +4,7 @@ Deployment of a new ORBS_VM is done using a git **pull request** in [orbs mainne
 ## Build docker image
 Now that your app has healthceck installed, uses the correct workdir, and writes status, you can use docker build, push to any docker registry
 
-> Before docker push! its very important to tag your ORBS-VM docker image in the following format ```**v**Major.Minor.Patch```
+> Before docker push! its very important to tag your ORBS-VM docker image in the following format ```v{Major}.{Minor}.{Patch}```
 
 ### example 
 In the ```.Dockerfile``` folder run the following commands:
@@ -66,7 +66,7 @@ It holds a description of a ORBS node's containers
 
 In this file you can see many orbs core components, and two instances of ORBS-VM
 
-> Please notice all images are tagged in the format of ```**v**Major.Minor.Patch```. This is crucial when upgrade is taking place.
+> Please notice all images are tagged in the format of ```v{Major}.{Minor}.{Patch}```. This is crucial when upgrade is taking place.
 
 ```json
 {

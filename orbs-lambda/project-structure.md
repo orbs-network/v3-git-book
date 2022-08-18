@@ -11,7 +11,7 @@ This is the JS file containing the function(s) you wish to run on Orbs Lambda, a
 
 ### General structure
 
-```js
+```javascript
 // imports of local files and [supported dependencies]
 const {conf} = require("./config.js");
 const abi = require('./abi.js') // [{"inputs":[...]...}...]

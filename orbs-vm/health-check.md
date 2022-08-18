@@ -17,7 +17,7 @@ node ./healthcheck.js
 ```
 As long as the execution of this bash returns status code 0, the container is healthy. 
 2. create ```healthecheck.js``` file with the health implementations:
-```js
+```javascript
 const fs = require('fs');
 
 try {

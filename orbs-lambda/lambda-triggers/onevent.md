@@ -3,8 +3,8 @@
 Listen to on-chain events and trigger your function whenever these are emitted.
 
 Interface:
-```js
-onEvent(
+```javascript
+engine.onEvent(
     fn, // function to execute
     contractAddress, // smart contract address
     abi, // Application Binary Interface (ABI) for an Ethereum smart contract. (array)

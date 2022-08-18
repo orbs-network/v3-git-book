@@ -4,7 +4,7 @@ Your Lambda is written as a regular JS function.
 
 Upon runtime, the backend process invokes your task function with a set of parameters according to its trigger type:
 
-```js
+```javascript
 // This task is planned to run on a time-based trigger
 function myScheduledTask(web3, storage, config) {
     // do hard work

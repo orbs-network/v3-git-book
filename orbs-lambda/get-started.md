@@ -18,6 +18,7 @@ bignumber.js
 dotenv
 ethereum-multicall
 node-fetch
+axios
 ```
 
 If you wish to use a package not included in this list, please contact us.

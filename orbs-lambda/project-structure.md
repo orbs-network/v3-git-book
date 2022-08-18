@@ -2,10 +2,23 @@
 
 Submitted projects should respect to following structure:
 
-* A new dir with the project name, containing:
-* index.js file
+* A new dir under `projects` named after your project, containing:
+* `index.js`: consists of 2 mandatory parts - task function(s) and exported `register` function, containing the triggers (see below).
 * Optional: additional files to be imported into index.js, such as config JSON, ABIs etc.
 
+
+```
+v3-orbs-lambda/
+├─ projects/
+│  ├─ myCoolProject/
+│  │  ├─ index.js
+│  │  ├─ abis.js
+│  │  ├─ config.js
+│  ├─ myAwesomeProject/
+│  │  ├─ index.js
+│  │  ├─ conf.json
+
+```
 ## index.js
 This is the JS file containing the function(s) you wish to run on Orbs Lambda, as well as the triggers definitions.
 
@@ -28,10 +41,12 @@ async function myEventTask(web3, storage, config, event) {
     storage.set(timestamp, event) // save the event in local storgae for later usage
 }
 
-// A registeration function with binds between task functions and triggers
+// A registration function with binds between task functions and triggers
 module.exports.register = function (engine) {
-    engine.onSchedule(myScheduledTask, "1d", 'ethereum', conf) // -> run myScheduledTask every day on Ethereum network, with "conf" as configuration
-    engine.onEvent(myEventsTask, myContractAddress, abi, ["event1", "event2"], 'polygon', conf) // -> run myEventTask whenwver event1 or event2 on myContract are emitted
+    // run myScheduledTask every day on Ethereum network, with "conf" as configuration
+    engine.onSchedule(myScheduledTask, "1d", 'ethereum', conf)
+    // run myEventTask whenever event1 or event2 on myContract are emitted
+    engine.onEvent(myEventsTask, myContractAddress, abi, ["event1", "event2"], 'polygon', conf)
 }
 ```
 That's it! This is the minimal format you need to follow in order to trigger your tasks however you wish!

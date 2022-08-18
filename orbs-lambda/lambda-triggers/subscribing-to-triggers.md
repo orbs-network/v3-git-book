@@ -1,7 +1,7 @@
 # Subscribing to triggers
 In order to subscribe to one or more of these triggers, one must implement and export a "register" function.
 
-```js
+```javascript
 module.exports.register = function (engine) {
     engine.onSchedule(myEthTask, "0 0 * * 1", 'ethereum', configEth)
     engine.onSchedule(myPolygonTask, "12h", 'polygon', configPolygon)

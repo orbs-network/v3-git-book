@@ -2,8 +2,8 @@
 
 Allows you to trigger your task based on a predefined schedule, either a cron expression or an "every x" notation.
 Interface:
-```js
-onSchedule(
+```javascript
+engine.onSchedule(
     fn, // function to execute
     schedule, // cron expression / every x minutes/hours/days
     network, // string representation of one of the supported networks
@@ -13,6 +13,8 @@ onSchedule(
 
 ### Cron Expression
 Standard cron expression in UTC timezone.
+
+[More on cron](https://en.wikipedia.org/wiki/Cron)
 
 Format:
 ```

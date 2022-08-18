@@ -1,5 +1,5 @@
 # Subscribing to triggers
-In order to subscribe to one or more of the triggers above, one must implement and export a "register" function.
+In order to subscribe to one or more of these triggers, one must implement and export a "register" function.
 
 ```js
 module.exports.register = function (engine) {

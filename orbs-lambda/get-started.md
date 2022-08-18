@@ -12,6 +12,12 @@ Full working examples can be found at the [Orbs Lambda repository](https://githu
 Tasks are executed in a node (version) runtime environment.
 
 You may import any of the following packages, which are pre-installed in the environment:
-TODO
+```
+web3
+bignumber.js
+dotenv
+ethereum-multicall
+node-fetch
+```
 
 If you wish to use a package not included in this list, please contact us.

@@ -6,7 +6,8 @@ Orbs Lambda currently supports the following networks:
 * Ethereum
 * Polygon
 * BSC
-* 
+* Fantom
+* Avalanche
 
 
 

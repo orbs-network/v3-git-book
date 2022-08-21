@@ -30,15 +30,15 @@ const {conf} = require("./config.js");
 const abi = require('./abi.js') // [{"inputs":[...]...}...]
 
 // The task functions you wish to run on Lambda, as well as other helper functions you may implement.
-async function myScheduledTask(web3, config) {
+async function myScheduledTask(web3, storage, guardians, config) {
     const contract = new web3.eth.Contract(abi, config.contractAddress)
     contract.methods.myMethod(config.methodParams).send()
 }
 
-async function myEventTask(web3, storage, config, event) {
+async function myEventTask(web3, storage, guardians, config, event) {
     console.log("Event emitted!", event)
-    const timestamp = new Date().getTime()
-    storage.set(timestamp, event) // save the event in local storgae for later usage
+    const sender = web3.eth.abi.decodeParameter('address', event.topics[1]);
+    if (guardians.include(sender)) storage.set(new Date().getTime(), event) // save the event in local storage if it was emitted by one of Orbs guardians
 }
 
 // A registration function with binds between task functions and triggers

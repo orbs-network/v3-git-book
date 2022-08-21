@@ -4,12 +4,13 @@
 
 ## orbs-vm
 
-* [introduction](orbs-vm/introduction.md)
-* [get started](orbs-vm/get-started.md)
-* [dockerfile](orbs-vm/docker-file.md)
-* [health check](orbs-vm/health-check.md)
-* [status](orbs-vm/status.md)
-* [deploy](orbs-vm/deploy.md)
+* [Introduction](orbs-vm/introduction.md)
+* [Get started](orbs-vm/get-started.md)
+* [Docker-mandatory](orbs-vm/docker-file.md)
+  * [Working Directory](orbs-vm/workdir.md)
+  * [Health check](orbs-vm/health-check.md)
+* [Status](orbs-vm/status.md)
+* [Deployment](orbs-vm/deploy.md)
 
 ## orbs-lambda
 

@@ -1,4 +1,4 @@
-# ORBS-VM Deploy 
+# ORBS-VM Deployment 
 Deployment of a new ORBS_VM is done using a git **pull request** in [orbs mainnet deployment repo](https://github.com/orbs-network/mainnet-deployment/blob/main/mainnet.json)
 
 ## Build docker image

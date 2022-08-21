@@ -7,6 +7,7 @@ consider this line described in the [dockerfile](./docker-file.md)
 - the ORBS-NODE orchestrator runs this process in order to determined if your orbs-vm instance is healthy.
 - A common way in orbs services and ORBS-VMs to determined a container's health, is to access its ```/op/orbs/status.json``` (explain in details here) and make sure its not stale (has been updated in recent few minutes for instance...)
 
+> HEALTHCHECK is Mandatory for your docker container to run on ORBS node. Don not skip the following instructions. 
 ## HEALTHCHECK example
 let us write a simple check based o the existence of a status.json and its "uptime" field's recency.
 

@@ -6,9 +6,9 @@
 
 * [Introduction](orbs-vm/introduction.md)
 * [Get started](orbs-vm/get-started.md)
-* [Docker-mandatory](orbs-vm/docker-file.md)
-  * [Working Directory](orbs-vm/workdir.md)
-  * [Health check](orbs-vm/health-check.md)
+* [Dockerfile](orbs-vm/docker-file.md)
+  * [Working Directory](orbs-vm/dockerfile/workdir.md)
+  * [Health check](orbs-vm/dockerfile/health-check.md)
 * [Status](orbs-vm/status.md)
 * [Deployment](orbs-vm/deploy.md)
 

@@ -2,7 +2,7 @@
 
 ## introduction
 
-<img width="500px" src="../.gitbook/assets/status.png" alt="" data-size="original">
+<img width="600px" src="../.gitbook/assets/status.png" alt="" data-size="original">
 
 
 - All docker containers on each orbs node  are monitored by [orbs status page](https://status.orbs.network/).

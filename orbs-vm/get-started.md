@@ -1,7 +1,7 @@
 # ORBS-VM Get Started 
 All docker images can run on orbs network, but they need to be slightly adjusted to be able to run smoothly on the network.
 
-## Docker image Prerequistis and Specs and Best Practice
+## Docker image Specs
 
 ### CPU architecture
 - Currently all ORBS permissionless nodes are running on x64-86 cpu architecture platforms

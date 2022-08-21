@@ -1,5 +1,5 @@
 # ORBS-VM Deployment 
-Deployment of a new ORBS_VM is done using a git **pull request** in [orbs mainnet deployment repo](https://github.com/orbs-network/mainnet-deployment/blob/main/mainnet.json)
+Deployment of a new ORBS-VM is done using a git **pull request** in [orbs mainnet deployment repo](https://github.com/orbs-network/mainnet-deployment/blob/main/mainnet.json)
 
 ## Build docker image
 Now that your app has healthceck installed, uses the correct workdir, and writes status, you can use docker build, push to any docker registry

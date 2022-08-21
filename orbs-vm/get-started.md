@@ -21,7 +21,7 @@ All docker images can run on orbs network, but they need to be slightly adjusted
 - Should your ORBS-VM listens on a container port that needs to be mapped to the host node, it needs to be specidied during [deployment](./deploy.md)
 
 ### Sign transactions
-- Should your ORBS_VM needs to sign web3 transactions, it can be done using the Node's Signer and be specified during [deployment](./deploy.md)
+- Should your ORBS-VM needs to sign web3 transactions, it can be done using the Node's Signer and be specified during [deployment](./deploy.md)
 - more on ORBS node signer can be found [here](https://github.com/orbs-network/signer-service)
 
 ### Orchestration in Docker swarm environment

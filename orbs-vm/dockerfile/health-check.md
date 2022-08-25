@@ -1,23 +1,29 @@
-# HEALTHCHECK
+# Health check
 
-consider this line described in the [dockerfile](./docker-file.md)
+Consider this line described in the [dockerfile](docker-file.md)
 
-```HEALTHCHECK CMD /opt/orbs/healthcheck``` 
+`HEALTHCHECK CMD /opt/orbs/healthcheck`
 
-- the ORBS-NODE orchestrator runs this process in order to determined if your orbs-vm instance is healthy.
-- A common way in orbs services and ORBS-VMs to determined a container's health, is to access its ```/op/orbs/status.json``` (explain in details here) and make sure its not stale (has been updated in recent few minutes for instance...)
+* The ORBS-NODE orchestrator runs this process in order to determine if your ORBS-VM instance is healthy.
+* A common method used by the Orbs Network's services, including ORBS-VMs, to determine a container's health, is to access its `/op/orbs/status.json` (explain in details here) and make sure it is not stale (has been updated in recent few minutes for instance...)
 
-> HEALTHCHECK is Mandatory for your docker container to run on ORBS node. Don not skip the following instructions. 
+> HEALTHCHECK is Mandatory for your docker container to run on the Orbs Guardian nodes. Do not skip the following instructions.
+
 ## HEALTHCHECK example
-let us write a simple check based o the existence of a status.json and its "uptime" field's recency.
 
-1. create ```healthechek/healthechek.sh``` shell file containing the following
+Let's write a simple check based on the existence of a status.json and its "uptime" field's recency.
+
+1. create `healthechek/healthechek.sh` shell file containing the following:
+
 ```bash
 #!/bin/sh
 node ./healthcheck.js
 ```
-As long as the execution of this bash returns status code 0, the container is healthy. 
-2. create ```healthecheck.js``` file with the health implementations:
+
+As long as the execution of this batch returns status code 0, the container is healthy.&#x20;
+
+2\. create `healthecheck.js` file with the health implementations:
+
 ```javascript
 const fs = require('fs');
 
@@ -43,7 +49,9 @@ try {
 // all good
 process.exit(0);
 ```
-3. install HEALTHCHECK In dockerfile
+
+3\. install HEALTHCHECK In dockerfile
+
 ```dockerfile
 ...
 # install healthcheck based on status.json
@@ -53,8 +61,8 @@ HEALTHCHECK CMD /opt/orbs/healthcheck.sh
 ...
 ```
 
-4. build your docker file - and now your VM is good to go on orbs v3!
+4\. Build your docker file -  now your VM is good to go on Orbs v3!
 
-> Please notice that the healthcheck in the example, relays on your VM to write a valid json file to ./status/status.json in the container/ read more about this [here](./status.md)
+> Please notice that the healthcheck in the example, relays on your VM to write a valid json file to ./status/status.json in the container/ read more about this [here](status.md)
 
 legacy orbs-v2 service installation spec can be found [here](https://github.com/orbs-network/orbs-spec/blob/ee181179ddf8ee57dc0b2bd1197a1b91054edd64/node-architecture/BOYAR.md)

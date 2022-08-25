@@ -1,27 +1,34 @@
-# ORBS-VM Introduction
-<img width="32px" src="../.gitbook/assets/logo-vm.png"/>
+# Introduction
+
+![](../.gitbook/assets/logo-vm.png)
 
 ## Why use ORBS-VM?
-- Some logic is too hard to implement on smart contracts in any blockchain.
-- Implementing this login outside the blockchain is centralized.
-- Smart contract can not trigger calls to themselves.
-- Interaction between several blockchain.
-- Maintain fast cache logic.
-- Decentralized backend complementary to your dapp smart contracts.
 
-> Please note that ORBS-VM should be chosen only if ORBS-Lambda does not fulfill your dapp's requirement, As ORBS_Lambda is much easier to set up and maintain. 
+Current smart contracts are limited in various ways, including:&#x20;
 
-## Key benefits using ORBS-VM
-- It can benefit from running on a decentralized permissionless network.
-- your container is always UP so long the network is alive
-- it can enjoy ORBS consensus decisions and data, for instance, which orbs-node with ORBS-VM performs the next action, or split the computed data amongst several nodes to distribute computation.
+* Certain logic is too complex to implement on smart contracts in any current blockchain.
+* Implementing this type of logic outside of the blockchain requires using centralized infrastructure.
+* Smart contracts are not able to trigger calls to themselves.
 
-## how does it work
-You may get your dapp logic to run on as an ORBS-VM in a very few steps:
+Orbs VBM solves these problems and offers the following benefits:
 
-- Wrap your entire logic on a single docker image
-- Push it to a public docker repo repo such as [https://hub.docker.com/](dockerhub)
-- Open a pull request in v3-ORBS-VM github as described [here](./deploy.md)
-- You container is gradually deployed to the orbs-network.
+* Allows interaction between several blockchains.
+* Maintains fast cache logic.
+* Provides decentralized backend infrastructrue that complements your Dapp smart contracts.
 
+> Please note that you should only use ORBS-VM if you have determined that ORBS-Lambda does not fulfill your Dapp's requirements. For simpler functions, ORBS-Lambda is much easier to set up and maintain.
 
+## Key benefits of using ORBS-VM
+
+* Your Dapp can benefit from running on a decentralized, permissionless network, instead of centralized services.
+* Your container is always UP, for as long the Orbs network continues to function.&#x20;
+* Your Dapp can utilize the Orbs Network's consensus decisions and data. For example, you can select a particular Orbs Guardian node within ORBS-VM to perform the next action, or elect to split the computed data among several nodes to distribute computation.
+
+## How  it works
+
+You can configure your Dapp's logic to run on ORBS-VM in a few steps:
+
+* Wrap your entire logic onto a single docker image
+* Push the docker image to a public docker repo repo such as [https://hub.docker.com/](dockerhub/)
+* Open a pull request in the v3-ORBS-VM github repository, as described [here](deploy.md)
+* Your container is then gradually deployed to the Orbs Network.

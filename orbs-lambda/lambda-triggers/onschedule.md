@@ -1,7 +1,7 @@
 # OnSchedule
 
-Allows you to trigger your task based on a predefined schedule, either a cron expression or an "every x" notation.
-Interface:
+This allows you to trigger your task based on a predefined schedule, either a cron expression or an "every x" notation.The interface is as follows:
+
 ```javascript
 engine.onSchedule(
     fn, // function to execute
@@ -12,11 +12,13 @@ engine.onSchedule(
 ```
 
 ### Cron Expression
+
 Standard cron expression in UTC timezone.
 
 [More on cron](https://en.wikipedia.org/wiki/Cron)
 
-Format:
+Cron expression utilizes the following format:
+
 ```
  *    *    *    *    *
 ┬    ┬    ┬    ┬    ┬
@@ -30,27 +32,23 @@ Format:
 
 Examples with the cron format:
 
-42 * * * *
-: _Execute when the minute is 42 (e.g. 19:42, 20:42, etc.)._
+42 \* \* \* \* : _Execute when the minute is 42 (e.g. 19:42, 20:42, etc.)._
 
-0 0 * * 1 : _Execute at 00:00 on Monday_
+0 0 \* \* 1 : _Execute at 00:00 on Monday_
 
 #### Unsupported Cron Features
 
-Currently, `W` (nearest weekday) and `L` (last day of month/week) are not supported.
-Most other features supported by popular cron implementations should work just fine,
-including `#` (nth weekday of the month).
+Currently, `W` (nearest weekday) and `L` (last day of month/week) are not supported. Most other features supported by popular cron implementations should work seamlessly, including `#` (nth weekday of the month).
 
 [cron-parser](https://github.com/harrisiirak/cron-parser) is used to parse crontab instructions.
 
-
 ### "Every" notation
-If you don't like writing cron expressions and prefer to configure your job to run every nth minute/hour/day.
-Starting time used as reference is the first minute of the hour / first hour of the day / first day of the month, respectively.
+
+If you don't like writing cron expressions and prefer to configure your job to run every nth minute/hour/day. The starting time used as a reference is the first minute of the hour / first hour of the day / first day of the month, respectively.
 
 (TODO)
 
-Format: [number]m|h|d
+Format: \[number]m|h|d
 
 Examples:
 

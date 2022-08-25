@@ -1,13 +1,16 @@
-# ORBS-VM Deployment 
-Deployment of a new ORBS-VM is done using a git **pull request** in [orbs mainnet deployment repo](https://github.com/orbs-network/mainnet-deployment/blob/main/mainnet.json)
+# Deployment
+
+Deployment of a new ORBS-VM is done using a git **pull request** in the [orbs mainnet deployment repo](https://github.com/orbs-network/mainnet-deployment/blob/main/mainnet.json)
 
 ## Build docker image
-Now that your app has healthceck installed, uses the correct workdir, and writes status, you can use docker build, push to any docker registry
 
-> Before docker push! its very important to tag your ORBS-VM docker image in the following format ```v{Major}.{Minor}.{Patch}```
+Now that your Dapp has healthcheck installed, uses the correct workdir, and writes status, you can use docker build and push to any docker registry.
 
-### example 
-In the ```.Dockerfile``` folder run the following commands:
+> Before you execute docker push!, it is very important to tag your ORBS-VM docker image in the following format: `v{Major}.{Minor}.{Patch}`
+
+### Example
+
+Run the following commands in the `.Dockerfile` folder :
 
 ```bash
 docker build -t example-docker-registry.io/vm-example .
@@ -18,7 +21,9 @@ docker push example-docker-registry.io/vm-example:v1.0.0
 ```
 
 ## mainnet.json
-let us consider mainnet.json
+
+Consider the mainnet.json file:
+
 ```json
 {
   "Desc": "Stable and Canary versions for Orbs network",
@@ -62,11 +67,11 @@ let us consider mainnet.json
 }
 ```
 
-It holds a description of a ORBS node's containers
+The above holds a description of a ORBS node's containers
 
-In this file you can see many orbs core components, and two instances of ORBS-VM
+In this file, you can see many of the Orbs Network's core components, and two instances of ORBS-VM
 
-> Please notice all images are tagged in the format of ```v{Major}.{Minor}.{Patch}```. This is crucial when upgrade is taking place.
+> Please note that all images are tagged in the format of `v{Major}.{Minor}.{Patch}`. This is crucial when an upgrade is taking place.
 
 ```json
 {
@@ -80,8 +85,8 @@ In this file you can see many orbs core components, and two instances of ORBS-VM
 }
 ```
 
-Now let us add "vm-example" which is hosted on some example docker repo, and listens on port 3333 with some configurable variables that
-will be displayed in the VMs ```status.json``` page
+Now let us add "vm-example," which is hosted on some example docker repos, and listens on port 3333 with some configurable variables that will be displayed in the VMs `status.json` page
+
 ```json
 {
     {...},
@@ -103,21 +108,21 @@ will be displayed in the VMs ```status.json``` page
 }
 ```
 
-Once has been added to the file, submit this change as a PR to the [repo](https://github.com/orbs-network/mainnet-deployment)
+Once the above has been added to the file, submit this change as a PR to the [repo](https://github.com/orbs-network/mainnet-deployment)
 
-orbs core team then will:
+The Orbs core team will then:
+
 1. Review the validity of the json.
-2. Check the registry and image exist.
+2. Check that the registry and image exist.
 3. Deploy to 0xStaging.
-4. Monitor Health and performance for a few hours or days, depending on complexity.
-5. Contact you to be able to review its performance on 0xStaging.
+4. Monitor Health and performance for a few hours or days, depending on the complexity of your Dapp.
+5. Contact you to review the Dapp's performance on 0xStaging.
 
-Once everything is completed, you VM will deploy to the network
+Once these steps are complete, your ORBS-VM will deploy to the network
 
 ## Upgrade your ORBS-VM
 
-Upgrade can be as simple as editing your entry in mainnet.json
-e.g
+Upgrade can be as simple as editing your entry in  mainnet.json. For example:
 
 ```json
 {
@@ -138,9 +143,10 @@ e.g
 }
 ```
 
-In the example you can see all parts of the VM descriptor can be updated
-- Image version
-- Port
-- Config
+In the above example you can see that all parts of the ORBS-VM descriptor can be updated
 
-> Please make sure the docker image tag version is advanced or else, an upgrade wont take place! 
+* Image version
+* Port
+* Config
+
+> Please make sure that the docker image tag version is advanced, or an upgrade won't be able to take place!

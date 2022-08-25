@@ -1,11 +1,10 @@
-# Project structure
+# Project Structure
 
-Submitted projects should respect to following structure:
+Submitted projects should conform to the following structure:
 
 * A new dir under `projects` named after your project, containing:
-* `index.js`: consists of 2 mandatory parts - task function(s) and exported `register` function, containing the triggers (see below).
-* Optional: additional files to be imported into index.js, such as config JSON, ABIs etc.
-
+* `index.js`: consists of 2 mandatory elements: task function(s) and exported `register` function, containing the relevant triggers (see below).
+* Optional: additional files can be imported into index.js, such as config JSON, ABIs etc.
 
 ```
 v3-orbs-lambda/
@@ -17,10 +16,11 @@ v3-orbs-lambda/
 │  ├─ myAwesomeProject/
 │  │  ├─ index.js
 │  │  ├─ conf.json
-
 ```
+
 ## index.js
-This is the JS file containing the function(s) you wish to run on Orbs Lambda, as well as the triggers definitions.
+
+This is the JS file containing the function(s) you wish to run on Orbs Lambda, as well as the  definitions of the triggers.
 
 ### General structure
 
@@ -49,4 +49,5 @@ module.exports.register = function (engine) {
     engine.onEvent(myEventsTask, myContractAddress, abi, ["event1", "event2"], 'polygon', conf)
 }
 ```
-That's it! This is the minimal format you need to follow in order to trigger your tasks however you wish!
+
+That's it! This is the minimal format you need to follow in order to trigger your tasks, in whatever way you wish!

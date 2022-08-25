@@ -2,14 +2,11 @@
 
 ## introduction
 
-<img width="600px" src="../.gitbook/assets/status.png" alt="" data-size="original">
+<img src="../.gitbook/assets/status.png" alt="" data-size="original">
 
-
-- All docker containers on each orbs node  are monitored by [orbs status page](https://status.orbs.network/).
-
-- Each ORBS-VM gets its on visual representation according to the `status.json` the vm exports.
-
-- Your ORBS-VM should write its own `/status/status.json` (container's path) every 5 minutes in order to be monitored, and for the HEALTHCHECK [described here](best-practice.md), to work properly.
+* All docker containers on each Orbs Guardian node are monitored by the [orbs status page](https://status.orbs.network/).
+* Each ORBS-VM gets its own visual representation according to the `status.json` exported by the ORBS-VM.
+* Your ORBS-VM should write its own `/status/status.json` (container's path) every 5 minutes in order to be monitored and for the HEALTHCHECK ([described here](best-practice.md)) to work properly.
 
 ## json format
 
@@ -32,32 +29,31 @@
 ### Error
 
 * Human readable explanation of current error, field exists only if the status is erroneous.
-* make sure to remove this field from the json in case the error has expired or not informative
-* upon error, status page responds in yellow color for the ORBS-VM representation box and shows text about the error.
+* Make sure to remove this field from the json in the event that the error has expired or is not informative
+* Upon an error, the status page responds in yellow color for the ORBS-VM representation box and shows text about the error.
 
 ### Status
 
-* Human readable explanation of current status, field always exists.
+* Human readable explanation of current status; this field always exists.
 
 ### Timestamp
 
 * Shows the latest write time of the file
-* used by status to determined validity of a ORBS-VM status
+* Used by status to determined validity of a ORBS-VM status
 
 ### Payload.Version.Semantic
 
-* Shows which ORBS-VM version, running on which node.
+* Shows which ORBS-VM version is running, and on which node.
 
 ### config
 
-* its a good to export whatever external config that is used by the ORBS-VM instance for debug and monitoring purposes.
+* It is advised to export whatever external config is used by the ORBS-VM instance for debug and monitoring purposes.
 
 ## json folder
 
-Since the working folder of the ORBS-VM is `/opt/orbs`
-The fill path of the status, in container's terms is `/opt/orbs/status/status.json`  
+Since the working folder of the ORBS-VM is `/opt/orbs,` the fill path of the status, in the container's terms is `/opt/orbs/status/status.json`
 
-In your code, just write to `./status/status.json`
+In your code, you should simply write to `./status/status.json`
 
 e.g
 
@@ -65,6 +61,6 @@ e.g
     writeFileSync('./status/status.json', JSON.stringify(myStatus));
 ```
 
-> Noe That status is implemented, please make sure your HEALTHCECK manages to read it properly and calculate it's recency of the **Timestamp** field
+> Noe that once status is implemented, you should make sure your HEALTHCECK manages to read it properly and calculate it's recency in the **Timestamp** field
 
-legacy orbs-v2 service service can be found [here](https://github.com/orbs-network/orbs-spec/blob/ee181179ddf8ee57dc0b2bd1197a1b91054edd64/node-architecture/BOYAR.md)
+The legacy orbs-v2  service can be found [here](https://github.com/orbs-network/orbs-spec/blob/ee181179ddf8ee57dc0b2bd1197a1b91054edd64/node-architecture/BOYAR.md)

@@ -1,10 +1,11 @@
 # Dockerfile
 
-First thing you need to do is to "dockerise" your app
-If it is already "dockerised", there are some few changed you'll need to support.
+The first thing you will need to do is to "dockerize" your Dapp. Once your Dapp has been "dockerized", there are a few additional changes you'll need to implement.
 
 ## Example
-Consider a nodejs example of orbs-vm docker file:
+
+Consider a nodejs example of ORBS-VM docker file:
+
 ```dockerfile
 FROM node:16-alpine
 
@@ -23,5 +24,5 @@ COPY dist ./dist
 CMD [ "npm", "start" ]
 ```
 
-- This dockerfile describes a common nodejs application
-- The only two changes your ORBS-VM docker has to consider is WOKDIR and HEALTHCHECK
+* This dockerfile describes a common nodejs application
+* In this case, the only two changes your ORBS-VM docker is required to contain are: WOKDIR and HEALTHCHECK.

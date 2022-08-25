@@ -85,7 +85,10 @@ In this file, you can see many of the Orbs Network's core components, and two in
 }
 ```
 
-Now let us add "vm-example," which is hosted on some example docker repos, and listens on port 3333 with some configurable variables that will be displayed in the VMs `status.json` page
+- Now, let us add "vm-example"
+  - Docker Image is hosted on some ```example-docker-registry.io```
+  - The container listens to ```port 3333```
+  - It has some configurable variables which are displayed in the VMs `status.json`
 
 ```json
 {

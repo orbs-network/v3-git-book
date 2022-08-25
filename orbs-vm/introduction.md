@@ -14,7 +14,7 @@ Orbs VBM solves these problems and offers the following benefits:
 
 * Allows interaction between several blockchains.
 * Maintains fast cache logic.
-* Provides decentralized backend infrastructrue that complements your Dapp smart contracts.
+* Provides decentralized backend infrastructure that complements your Dapp smart contracts.
 
 > Please note that you should only use ORBS-VM if you have determined that ORBS-Lambda does not fulfill your Dapp's requirements. For simpler functions, ORBS-Lambda is much easier to set up and maintain.
 

@@ -38,8 +38,8 @@
 
 ### Timestamp
 
-* Shows the latest write time of the file
-* Used by status to determined validity of a ORBS-VM status
+* Shows the latest write time of the file in [ISO](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString) format .
+* Used by status to determined validity of a ORBS-VM status.
 
 ### Payload.Version.Semantic
 

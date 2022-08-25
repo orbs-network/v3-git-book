@@ -12,16 +12,18 @@ FROM node:16-alpine
 # standard working directory
 WORKDIR /opt/orbs
 
-# install healthcheck based on status.json
-COPY ./healthcheck.sh ./
-COPY ./healthcheck.js ./
-HEALTHCHECK CMD /opt/orbs/healthcheck.sh
-
 # install your app
 COPY package*.json ./
 RUN npm install
 COPY dist ./dist
 CMD [ "npm", "start" ]
+
+# install healthcheck based on status.json
+COPY ./healthcheck.sh ./
+COPY ./healthcheck.js ./
+HEALTHCHECK CMD /opt/orbs/healthcheck.sh
+
+
 ```
 
 * This dockerfile describes a common nodejs application

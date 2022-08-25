@@ -5,7 +5,7 @@ Consider this line described in the [dockerfile](docker-file.md)
 `HEALTHCHECK CMD /opt/orbs/healthcheck`
 
 * The ORBS-NODE orchestrator runs this process in order to determine if your ORBS-VM instance is healthy.
-* A common method used by the Orbs Network's services, including ORBS-VMs, to determine a container's health, is to access its `/op/orbs/status.json` (explain in details here) and make sure it is not stale (has been updated in recent few minutes for instance...)
+* A common method used by the Orbs Network's services, including ORBS-VMs, to determine a container's health, is to access its `/op/orbs/status/status.json` (explain in details [here](../status.md)) and make sure it is not stale (has'nt been updated in recent few minutes for instance...)
 
 > HEALTHCHECK is Mandatory for your docker container to run on the Orbs Guardian nodes. Do not skip the following instructions.
 
@@ -13,7 +13,7 @@ Consider this line described in the [dockerfile](docker-file.md)
 
 Let's write a simple check based on the existence of a status.json and its "uptime" field's recency.
 
-1. create `healthechek/healthechek.sh` shell file containing the following:
+1. Create `healthechek.sh` (sibling to Dockerfile) shell file containing the following:
 
 ```bash
 #!/bin/sh

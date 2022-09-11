@@ -9,6 +9,7 @@
 * [Dockerfile](orbs-vm/docker-file.md)
   * [Working Directory](orbs-vm/dockerfile/workdir.md)
   * [Health check](orbs-vm/dockerfile/health-check.md)
+  * [Entry point](orbs-vm/dockerfile/entry-point.md)
 * [Status](orbs-vm/status.md)
 * [Deployment](orbs-vm/deploy.md)
 

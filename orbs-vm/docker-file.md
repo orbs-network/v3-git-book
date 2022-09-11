@@ -23,7 +23,8 @@ COPY ./healthcheck.sh ./
 COPY ./healthcheck.js ./
 HEALTHCHECK CMD /opt/orbs/healthcheck.sh
 
-
+# install entry point executable
+COPY ./entrypoint.sh /opt/orbs/service
 ```
 
 * This dockerfile describes a common nodejs application

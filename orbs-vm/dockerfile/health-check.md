@@ -1,8 +1,12 @@
 # Health check
 
-Consider this line described in the [dockerfile](docker-file.md)
+Consider this line described in the [dockerfile](../docker-file.md)
 
-`HEALTHCHECK CMD /opt/orbs/healthcheck`
+```dockerfile
+COPY ./healthcheck.sh ./
+COPY ./healthcheck.js ./
+HEALTHCHECK CMD /opt/orbs/healthcheck.sh
+```
 
 * The ORBS-NODE orchestrator runs this process in order to determine if your ORBS-VM instance is healthy.
 * A common method used by the Orbs Network's services, including ORBS-VMs, to determine a container's health, is to access its `/op/orbs/status/status.json` (explain in details [here](../status.md)) and make sure it is not stale (has'nt been updated in recent few minutes for instance...)

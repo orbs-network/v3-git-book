@@ -24,7 +24,7 @@ Any docker image can be run on the Orbs Network. However, they may require some 
 
 ### Communication and ports
 
-* Should your ORBS-VM listens on a container port that needs to be mapped to the host node, it needs to be specidied during [deployment](deploy.md)
+* Should your ORBS-VM listens on a container port that needs to be mapped to the host node, it needs to be specified during [deployment](deploy.md)
 
 ### Sign transactions
 
@@ -35,6 +35,6 @@ Any docker image can be run on the Orbs Network. However, they may require some 
 
 * Orbs Guardian nodes run docker swarm. They also run a process which utilizes swarm in order to orchestrate the Orbs Network's core components, as well as Dapps utilizing ORBS-VM. For your container to run smoothly, you will need to implement the following:
   * Maintain a [dockerfile HEALTHCHECK](https://docs.docker.com/engine/reference/builder/)
-  * Benefit from the Orbs [status page](http://status.orbs.network), with its own representation, if maintains a status.json file according to a certain format.
+  * Benefit from the Orbs [status page](http://status.orbs.network), with its own representation, if it maintains a status.json file according to a certain format.
 
 Click to read more about ORBS-VM [Healthcheck](health-check.md) and [Status](status.md)

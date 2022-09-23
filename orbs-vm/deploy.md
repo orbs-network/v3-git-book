@@ -67,9 +67,9 @@ Consider the mainnet.json file:
 }
 ```
 
-The above holds a description of a ORBS node's containers
+The above holds a description of an ORBS node's containers.
 
-In this file, you can see many of the Orbs Network's core components, and two instances of ORBS-VM
+In this file, you can see many of the Orbs Network's core components, and two instances of ORBS-VM.
 
 > Please note that all images are tagged in the format of `v{Major}.{Minor}.{Patch}`. This is crucial when an upgrade is taking place.
 
@@ -85,10 +85,10 @@ In this file, you can see many of the Orbs Network's core components, and two in
 }
 ```
 
-- Now, let us add "vm-example"
-  - Docker Image is hosted on some ```example-docker-registry.io```
-  - The container listens to ```port 3333```
-  - It has some configurable variables which are displayed in the VMs `status.json`
+* Now, let us add "vm-example"
+  * Docker Image is hosted on some `example-docker-registry.io`
+  * The container listens to `port 3333`
+  * It has some configurable variables which are displayed in the VMs `status.json`
 
 ```json
 {
@@ -125,7 +125,7 @@ Once these steps are complete, your ORBS-VM will deploy to the network
 
 ## Upgrade your ORBS-VM
 
-Upgrade can be as simple as editing your entry in  mainnet.json. For example:
+Upgrade can be as simple as editing your entry in mainnet.json. For example:
 
 ```json
 {

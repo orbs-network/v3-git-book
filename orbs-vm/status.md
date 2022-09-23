@@ -28,9 +28,9 @@
 
 ### Error
 
-* Human readable explanation of current error, field exists only if the status is erroneous.
+* Human readable explanation of current error; this field exists only if the status is erroneous.
 * Make sure to remove this field from the json in the event that the error has expired or is not informative
-* Upon an error, the status page responds in yellow color for the ORBS-VM representation box and shows text about the error.
+* If an error occurs, the status page responds in yellow color for the ORBS-VM representation box and shows text about the error.
 
 ### Status
 
@@ -38,7 +38,7 @@
 
 ### Timestamp
 
-* Shows the latest write time of the file in [ISO](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString) format .
+* Shows the latest write time of the file in [ISO](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Date/toISOString) format .
 * Used by status to determined validity of a ORBS-VM status.
 
 ### Payload.Version.Semantic
@@ -63,4 +63,4 @@ e.g
 
 > Noe that once status is implemented, you should make sure your HEALTHCECK manages to read it properly and calculate it's recency in the **Timestamp** field
 
-The legacy orbs-v2  service can be found [here](https://github.com/orbs-network/orbs-spec/blob/ee181179ddf8ee57dc0b2bd1197a1b91054edd64/node-architecture/BOYAR.md)
+The legacy orbs-v2 service can be found [here](https://github.com/orbs-network/orbs-spec/blob/ee181179ddf8ee57dc0b2bd1197a1b91054edd64/node-architecture/BOYAR.md)

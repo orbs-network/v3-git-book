@@ -1,6 +1,6 @@
 # Dockerfile
 
-The first thing you will need to do is to "dockerize" your Dapp. Once your Dapp has been "dockerized", there are a few additional changes you'll need to implement.
+The first thing you will need to do is to "dockerize" your Dapp. Once your Dapp has been "dockerized", there are a few additional changes you will need to implement.
 
 ## Example
 

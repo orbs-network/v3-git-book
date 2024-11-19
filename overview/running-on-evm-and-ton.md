@@ -10,7 +10,7 @@ Bitcoin’s immutable nature was never designed to be a platform for innovation.
 
 Orbs supports all leading EVM flavors including Ethereum mainnet, Polygon, BNB chain, Avalanche, Fantom and more and smart contracts implemented in Solidity.
 
-For more information about the EVM, see [https://ethereum.org](https://ethereum.org/)
+For more information about the EVM, see[ https://ethereum.org](https://ethereum.org/)
 
 ## TON
 
@@ -20,4 +20,4 @@ If Ethereum targets power users, TON is the infrastructure for apps targeting th
 
 Orbs supports TON mainnet and smart contracts implemented in FunC. Orbs is designed to complement TON's unique asynchronous nature and scale with TON to billions of users.
 
-For more information about TON, see [https://ton.org](https://ton.org)
+For more information about TON, see[ https://ton.org](https://ton.org/)

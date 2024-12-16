@@ -1,6 +1,6 @@
 # Layer 3 Protocol
 
-Blockchain infrastructure is often modelled as a tiered stack of multiple protocols that run on top of each other. This composition method allows newer protocols to add capabilities to the foundational protocols that were created before them.
+Blockchain infrastructure is often modeled as a tiered stack of multiple protocols that run on top of each other. This composition method allows newer protocols to add capabilities to the foundational protocols that were created before them.
 
 ### Orbs is a layer 3 protocol
 

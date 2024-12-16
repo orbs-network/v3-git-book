@@ -1,7 +1,3 @@
----
-coverY: 0
----
-
 # dTWAP Protocol
 
 ## What is dTWAP?

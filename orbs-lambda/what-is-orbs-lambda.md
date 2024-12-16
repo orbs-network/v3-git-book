@@ -1,7 +1,3 @@
----
-coverY: 0
----
-
 # What is Orbs Lambda?
 
 ## Decentralized Serverless Cloud Function

@@ -61,6 +61,7 @@
   * [Integration Spec](protocols/dlimit-protocol/integration-spec.md)
   * [dLIMIT Tutorial](protocols/dlimit-protocol/dlimit-tutorial.md)
   * [FAQ](protocols/dlimit-protocol/faq.md)
+* [dSLTP Protocol](protocols/dsltp-protocol.md)
 
 ## Community Projects
 

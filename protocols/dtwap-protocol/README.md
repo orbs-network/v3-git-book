@@ -4,6 +4,8 @@
 
 TWAP (Time-Weighted Average Price), also referred to as DCA (Dollar Cost Average), is a common algorithmic trading executing strategy in CeFi that seeks to minimize a large order’s impact on the market by dividing it into a number of smaller trades and executing these trades at regular intervals over a specified period of time.
 
+dTWAP is part of the Orbs Advanced Orders Suite, together with [dLIMIT](https://docs.orbs.network/v3/protocols/dlimit-protocol) and [dSLTP](https://docs.orbs.network/v3/protocols/dsltp-protocol).
+
 ### Typical Use-cases:
 
 There are two primary benefits of utilizing TWAP trading strategies.

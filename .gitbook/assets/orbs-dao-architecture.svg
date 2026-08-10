@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="760" viewBox="0 0 1240 760">
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#4A5568"/></marker>
+    <style>
+      .t{font:700 26px Arial;fill:#1A202C}.s{font:400 15px Arial;fill:#4A5568}
+      .h{font:700 17px Arial;fill:#1A202C}.b{font:400 14px Arial;fill:#2D3748}.m{font:400 12px Arial;fill:#718096}
+      .zone{font:700 13px Arial;fill:#718096;letter-spacing:1px}
+      .ln{stroke:#4A5568;stroke-width:2.5;fill:none;marker-end:url(#a)}
+    </style>
+  </defs>
+  <rect width="1240" height="760" fill="#FAFBFC"/>
+  <text x="50" y="52" class="t">Orbs DAO: how authority flows</text>
+  <text x="50" y="80" class="s">Initial structure defined by OIP-9. Every path is defined, scoped, and verifiable on-chain.</text>
+
+  <!-- Zone: Governance -->
+  <rect x="40" y="110" width="360" height="580" rx="16" fill="#EDF2FF" stroke="#B9C6F2" stroke-width="1.5"/>
+  <text x="70" y="145" class="zone">GOVERNANCE LAYER</text>
+  <!-- Zone: Execution -->
+  <rect x="440" y="110" width="380" height="580" rx="16" fill="#EFFAF3" stroke="#B5E0C6" stroke-width="1.5"/>
+  <text x="470" y="145" class="zone">EXECUTION LAYER</text>
+  <!-- Zone: Protocol -->
+  <rect x="860" y="110" width="340" height="580" rx="16" fill="#FBF3EA" stroke="#EBD1B3" stroke-width="1.5"/>
+  <text x="890" y="145" class="zone">PROTOCOL LAYER</text>
+
+  <!-- Governance nodes -->
+  <rect x="70" y="180" width="300" height="120" rx="12" fill="#FFFFFF" stroke="#5B78D1" stroke-width="2"/>
+  <text x="95" y="215" class="h">Staked ORBS holders</text>
+  <text x="95" y="243" class="b">Voting power = tokens staked in PoS</text>
+  <text x="95" y="267" class="b">Guardians may vote delegated stake</text>
+  <text x="95" y="289" class="m">Delegators can always vote directly</text>
+
+  <rect x="70" y="350" width="300" height="130" rx="12" fill="#FFFFFF" stroke="#5B78D1" stroke-width="2"/>
+  <text x="95" y="385" class="h">OIP process on Snapshot</text>
+  <text x="95" y="413" class="b">Proposal, discussion, Snapshot vote</text>
+  <text x="95" y="437" class="b">Process and rules per OIP-0</text>
+  <text x="95" y="461" class="m">Approved OIP = authorised action</text>
+
+  <rect x="70" y="530" width="300" height="120" rx="12" fill="#FFF8E7" stroke="#D9A62E" stroke-width="2"/>
+  <text x="95" y="565" class="h">Emergency exception</text>
+  <text x="95" y="593" class="b">Only to prevent material loss when</text>
+  <text x="95" y="615" class="b">a vote cannot be arranged in time</text>
+  <text x="95" y="637" class="m">Must return to Snapshot for ratification</text>
+
+  <!-- Execution nodes -->
+  <rect x="480" y="180" width="300" height="140" rx="12" fill="#FFFFFF" stroke="#2F9E5F" stroke-width="2"/>
+  <text x="505" y="215" class="h">DAO Parameters Multisig</text>
+  <text x="505" y="243" class="b">Role: Functional Manager</text>
+  <text x="505" y="267" class="b">Ethereum + Polygon deployments</text>
+  <text x="505" y="291" class="m">Parameters may differ per network</text>
+
+  <rect x="480" y="370" width="300" height="140" rx="12" fill="#FFFFFF" stroke="#2F9E5F" stroke-width="2"/>
+  <text x="505" y="405" class="h">DAO Certification Multisig</text>
+  <text x="505" y="433" class="b">Role: Certification Manager</text>
+  <text x="505" y="457" class="b">Guardian certification and revocation</text>
+  <text x="505" y="481" class="m">Scoped to the certification contract</text>
+
+  <rect x="480" y="560" width="300" height="100" rx="12" fill="#FFFFFF" stroke="#2F9E5F" stroke-width="2"/>
+  <text x="505" y="595" class="h">OIP-gated approvals</text>
+  <text x="505" y="623" class="b">Major upgrades, new protocol</text>
+  <text x="505" y="645" class="b">deployments approved by vote</text>
+
+  <!-- Protocol nodes -->
+  <rect x="890" y="180" width="280" height="130" rx="12" fill="#FFFFFF" stroke="#C77F2E" stroke-width="2"/>
+  <text x="915" y="215" class="h">Orbs PoS contracts</text>
+  <text x="915" y="243" class="b">Defined parameter functions,</text>
+  <text x="915" y="267" class="b">e.g. staking reward rates</text>
+  <text x="915" y="291" class="m">Only listed functions are callable</text>
+
+  <rect x="890" y="370" width="280" height="120" rx="12" fill="#FFFFFF" stroke="#C77F2E" stroke-width="2"/>
+  <text x="915" y="405" class="h">Certification contract</text>
+  <text x="915" y="433" class="b">Guardian certification state</text>
+  <text x="915" y="457" class="m">Verified on Etherscan</text>
+
+  <rect x="890" y="540" width="280" height="120" rx="12" fill="#FFFFFF" stroke="#C77F2E" stroke-width="2"/>
+  <text x="915" y="575" class="h">Public on-chain record</text>
+  <text x="915" y="603" class="b">Every execution is a visible tx</text>
+  <text x="915" y="627" class="m">Linked from the transparency page</text>
+
+  <!-- connectors -->
+  <path d="M220 300 L220 350" class="ln"/>
+  <path d="M370 400 L480 260" class="ln"/>
+  <path d="M370 430 L480 430" class="ln"/>
+  <path d="M370 455 L480 600" class="ln"/>
+  <path d="M780 250 L890 245" class="ln"/>
+  <path d="M780 440 L890 430" class="ln"/>
+  <path d="M780 610 L890 600" class="ln"/>
+  <path d="M220 480 L220 530" class="ln" stroke-dasharray="6 5"/>
+
+  <text x="50" y="730" class="m">Multisigs act only on approved OIP votes. The dashed path is the narrow emergency exception, which must be ratified by a Snapshot vote afterwards.</text>
+</svg>

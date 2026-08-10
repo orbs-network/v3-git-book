@@ -51,7 +51,7 @@
 
 * [Liquidity Hub](protocols/liquidity-hub/README.md)
   * [Integration Spec](protocols/liquidity-hub/integration-spec.md)
-* [Perpetual Hub](protocols/perpetual-hub.md)
+* [Perpetual Hub Ultra](protocols/perpetual-hub.md)
 * [dTWAP Protocol](protocols/dtwap-protocol/README.md)
   * [Integration Spec](protocols/dtwap-protocol/integration-spec.md)
   * [Network Diagram](protocols/dtwap-protocol/network-diagram.md)
@@ -62,6 +62,12 @@
   * [dLIMIT Tutorial](protocols/dlimit-protocol/dlimit-tutorial.md)
   * [FAQ](protocols/dlimit-protocol/faq.md)
 * [dSLTP Protocol](protocols/dsltp-protocol.md)
+* [Orbs Agentic](protocols/orbs-agentic.md)
+* [Orbs Institutional](protocols/orbs-institutional.md)
+
+## Governance
+
+* [Orbs DAO](governance/orbs-dao.md)
 
 ## Community Projects
 

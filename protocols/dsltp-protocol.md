@@ -4,6 +4,8 @@
 
 dSLTP, powered by Orbs, is the first DeFi implementation of a decentralized stop order solution for DEXs. Built on Orbs’ Layer-3 technology, dSLTP delivers reliable, robust, and efficient execution of stop-loss and take-profit orders — all in a fully decentralized manner.
 
+dSLTP is part of the Orbs Advanced Orders Suite, together with [dTWAP](https://docs.orbs.network/v3/protocols/dtwap-protocol) and [dLIMIT](https://docs.orbs.network/v3/protocols/dlimit-protocol).
+
 Stop orders are essential tools for strategic trading, as they help protect investments by limiting potential losses through **stop-loss** orders and enable traders to capitalize on market breakouts with **take-profit** triggers.
 
 _dSLTP is part of Orbs Advanced Orders Suite, which also includes_ [_dLIMIT_](https://www.orbs.com/dlimit/) _and_ [_dTWAP_](https://www.orbs.com/dtwap/)_, bringing advanced order types to DeFi that were once available only on centralized exchanges._

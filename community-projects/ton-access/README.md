@@ -10,7 +10,6 @@ Supports all popular RPC protocols on TON:
 
 1. [TonCenter HTTP API v2](https://toncenter.com/api/v2/) - replaces the [https://toncenter.com/api/v2/jsonRPC](https://toncenter.com/api/v2/jsonRPC) endpoint
 2. [TonHub HTTP API v4](https://github.com/ton-foundation/ton-api-v4) - replaces the [https://mainnet-v4.tonhubapi.com](https://mainnet-v4.tonhubapi.com/) endpoint
-3. [Raw ADNL Proxy](https://github.com/ton-community/ton-lite-client) - coming soon
 
 ### Benefits of using the Orbs TON Access
 

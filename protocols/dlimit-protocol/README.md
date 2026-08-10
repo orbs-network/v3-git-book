@@ -6,6 +6,8 @@
 
 Most DeFi users are probably familiar with the regular DEX “swap” order, similar to a market order in CeFi.
 
+dLIMIT is part of the Orbs Advanced Orders Suite, together with [dTWAP](https://docs.orbs.network/v3/protocols/dtwap-protocol) and [dSLTP](https://docs.orbs.network/v3/protocols/dsltp-protocol).
+
 A limit order, on the other hand, enables users to buy or sell tokens at a specified price or better. While the price is guaranteed, the order being executed is not - limit orders will be executed only if the price meets the order qualifications.
 
 However, decentralized limit orders are not trivial to implement using smart contracts. Flawed implementation of limit orders in DeFi can hurt users by executing the order at a price much worse than they intended, or the order not being executed at all.

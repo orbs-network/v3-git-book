@@ -4,7 +4,7 @@ Blockchain infrastructure is often modeled as a tiered stack of multiple protoco
 
 ### Orbs is a layer 3 protocol
 
-Orbs works in conjunction with existing L1 and L2 solutions, such as Ethereum, TON, Polygon, BNB Chain, Avalanche, Fantom etc. An app does not need to move its liquidity onto a different chain in order to utilize Orbs' enhanced execution services.
+Orbs works in conjunction with existing L1 and L2 solutions, such as Ethereum, TON, Polygon, BNB Chain, Avalanche, Base, Sonic etc. An app does not need to move its liquidity onto a different chain in order to utilize Orbs' enhanced execution services.
 
 Orbs acts as a “decentralized backend”, enhancing the capabilities of EVM and non-EVM smart contracts and opening up a whole new spectrum of possibilities for Web 3.0, DeFi, NFTs and GameFi.
 
@@ -14,7 +14,7 @@ Orbs acts as a “decentralized backend”, enhancing the capabilities of EVM an
   The foundational blockchain layer is called L1 and provides the core security for the entire stack. This layer often holds the liquidity of all apps running on top (TVL). Popular L1 blockchains include Ethereum and TON.\
 
 * **Layer 2 - Scalability**\
-  Since the majority of L1s are not necessarily scalable, L2 protocols often focus on increasing transaction throughput, supporting more users and decreasing transaction fees. Popular L2 blockchains include Polygon and Avalanche.\
+  Since the majority of L1s are not necessarily scalable, L2 protocols often focus on increasing transaction throughput, supporting more users and decreasing transaction fees. Popular L2 blockchains include Arbitrum and Base.\
 
 * **Layer 3 - Enhanced Execution**\
   Since L1/L2 contracts are inherently limited in nature and sandboxed, L3 protocols provide enhanced execution capabilities for apps by relying on external validators and oracle networks. Popular L3 blockchains include Chainlink and Orbs.\

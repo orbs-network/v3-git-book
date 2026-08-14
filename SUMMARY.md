@@ -9,6 +9,7 @@
 * [L3 for Advanced Trading](overview/l3-for-advanced-trading.md)
 * [Network Diagram](overview/network-diagram.md)
 * [White Papers and Spec](overview/white-papers-and-spec.md)
+* [Orbs PoS Universe](https://orbs-doc.gitbook.io/pos)
 
 ## Orbs Lambda
 
